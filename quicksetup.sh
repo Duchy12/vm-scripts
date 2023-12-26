@@ -1,8 +1,5 @@
-# get current user
-user=$(whoami)
-
-# Get root access
-su -
+echo "Enter username: "
+read user
 
 # Update the system
 echo "Updating the system..."
