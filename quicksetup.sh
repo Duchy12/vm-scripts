@@ -1,5 +1,12 @@
-echo "Enter username: "
-read user
+# Get current user
+user=$(whoami)
+
+# Elevate privileges
+echo "Elevating privileges..."
+sudo -s
+
+# permanently add sbin to path
+echo "export PATH=$PATH:/usr/sbin" >> ~/.bashrc
 
 # Update the system
 echo "Updating the system..."
