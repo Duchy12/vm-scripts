@@ -29,7 +29,6 @@ usermod -aG sudo $user
 echo "Enabling firewall..."
 ufw enable
 
-
 # Allow SSH
 echo "Allowing SSH..."
 ufw allow 22
