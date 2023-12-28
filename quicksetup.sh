@@ -6,7 +6,7 @@ echo "Elevating privileges..."
 sudo -s
 
 # permanently add sbin to path
-echo "export PATH=$PATH:/usr/sbin" >> ~/.bashrc
+export PATH="$PATH:/usr/sbin" >> ~/.bashrc
 
 # Update the system
 echo "Updating the system..."
